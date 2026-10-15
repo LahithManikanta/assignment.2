@@ -1,0 +1,31 @@
+/* Main page styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+}
+
+/* Main container */
+div {
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  color: #ffffff;
+  background-color: #007bff;
+  padding: 20px;
+  margin-top: 0;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 20px;
+  color: #333333;
+  background-color: white;
+  padding: 15px;
+  margin: 20px auto;
+  width: 60%;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
