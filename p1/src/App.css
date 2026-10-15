@@ -1,38 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
 }
 
-.container {
+.app {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.student-card {
-  width: 350px;
-  padding: 25px;
-  background-color: white;
+  padding: 40px 20px;
   text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.student-card h1 {
+.light {
+  background-color: #f0f4f8;
+  color: #222;
+}
+
+.dark {
+  background-color: #222;
   color: white;
-  background-color: #007bff;
-  padding: 15px;
-  font-size: 24px;
-  border-radius: 8px;
 }
 
-.student-card p {
-  padding: 12px;
-  margin: 12px 0;
-  background-color: #eaf2f8;
-  color: #333;
+h1 {
+  margin-bottom: 25px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 350px;
+  margin: 0 auto 25px;
+}
+
+li {
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  color: #222;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dark li {
+  background-color: #444;
+  color: white;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
   border-radius: 6px;
   font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
