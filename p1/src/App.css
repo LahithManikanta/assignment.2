@@ -1,31 +1,38 @@
-/* Main page styling */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f0f4f8;
 }
 
-/* Main container */
-div {
-  text-align: center;
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Heading */
-h1 {
-  color: #ffffff;
-  background-color: #007bff;
-  padding: 20px;
-  margin-top: 0;
-}
-
-/* Paragraph styling */
-p {
-  font-size: 20px;
-  color: #333333;
+.student-card {
+  width: 350px;
+  padding: 25px;
   background-color: white;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.student-card h1 {
+  color: white;
+  background-color: #007bff;
   padding: 15px;
-  margin: 20px auto;
-  width: 60%;
+  font-size: 24px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.student-card p {
+  padding: 12px;
+  margin: 12px 0;
+  background-color: #eaf2f8;
+  color: #333;
+  border-radius: 6px;
+  font-size: 16px;
 }

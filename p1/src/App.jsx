@@ -1,20 +1,33 @@
+import "./App.css";
+
+const student = {
+  name: "Shiva Shanker",
+  rollNo: "23",
+  department: "Computer Science",
+  year: "3rd Year",
+};
+
+// Arrow function and object destructuring
+const StudentInfo = ({ name, rollNo, department, year }) => {
+  return (
+    <div className="student-card">
+      <h1>Student Information</h1>
+
+      <p>{`Name: ${name}`}</p>
+      <p>{`Roll Number: ${rollNo}`}</p>
+      <p>{`Department: ${department}`}</p>
+      <p>{`Year: ${year}`}</p>
+    </div>
+  );
+};
+
 function App() {
-  const name = "Shiva Shanker";
-  const today = new Date().toLocaleDateString();
-  const num1 = 10;
-  const num2 = 20;
+  // Spread operator
+  const studentDetails = { ...student };
 
   return (
-    <div>
-      <h1>My Details</h1>
-
-      <p>My Name: {name}</p>
-
-      <p>Today's Date: {today}</p>
-
-      <p>
-        Sum of {num1} and {num2} = {num1 + num2}
-      </p>
+    <div className="container">
+      <StudentInfo {...studentDetails} />
     </div>
   );
 }
